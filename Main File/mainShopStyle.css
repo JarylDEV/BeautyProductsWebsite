@@ -1,0 +1,546 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 99vw;
+    background: linear-gradient(rgb(250, 238, 168) 20%, rgba(255, 138, 177, 0.637)80%);
+}
+
+#MAIN_CONTAINER{
+    overflow: hidden;
+    width: 99vw;
+}
+
+#MAIN_HEADER{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#NAVBAR_TITLE{
+    position: relative;
+    top: 4px;
+    left: 35px;
+    font-size: 16px;
+    font-family: "Oswald";
+    color: rgb(255, 68, 130);
+}
+
+#NAVBAR{
+    display:flex;
+    position: relative;
+    right: 125px;
+    top: -5px;
+}
+
+#NAVBAR a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Bebas Neue";
+    color: rgba(255, 102, 153, 0.904);
+}
+
+#NAVBAR ul{
+    display: flex;
+    list-style-type: none;
+}
+
+#NAVBAR ul li{
+    padding: 13px;
+}
+
+#PAGE_TITLE_CONT{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#PAGE_PARAGRAPH_CONT{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -170px;
+}
+
+#PAGE_PARAGRAPH_SUB_PARAGRAPH{
+    font-size: 13px;
+    font-family: Oswald;
+    color: rgba(177, 71, 107, 0.884);
+}
+
+#PAGE_PARAGRAPH_SUB_PARAGRAPH span{
+    position: relative;
+    left: 20px;
+}
+
+#PAGE_TITLE{
+    font-family: Oswald;
+    font-size: 7em;
+    font-weight: 600;
+    color: rgb(255, 68, 130);
+    position: relative;
+    top: -90px;
+}
+
+#IMAGE_CONT{
+    position: absolute;
+    display: flex;
+    top: 285px;
+    height: 31em;
+    width: 100vw;
+    z-index: 99;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#IMAGE_CONT::-webkit-scrollbar{
+    display: none;
+}
+
+#IMAGE_PROD_CONT{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 31em;
+    width: 140em;
+    animation: PRODUCTSPIN 20s linear infinite;
+}
+
+.images{
+    height: 525px;
+}
+
+#FIRST_PAGE_SUB_SECTION{
+    height: 106vh;
+    width: 100vw;
+    background-color: rgb(255 181 206);
+    position: relative;
+    top: 360px;
+    overflow: hidden;
+}
+
+#SUB_PAGE_H1{
+    font-family: Oswald;
+    font-size: 3em; 
+    font-weight: 600;
+    color: #fff;
+}
+
+#SUB_PAGE_RADIUS{
+    height: 617px;
+    width: 100%;
+    background: rgba(173, 10, 10, 0.932);
+    position: absolute;
+    bottom: 0;
+    border-radius: 30em 30em 0 0;
+    border-top: 2px solid white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#SUB_PAGE_CHILD_RADIUS{
+    position: absolute;
+    top: 1em;
+    z-index: 2;
+}
+
+#SUB_PAGE_IMAGE{
+    display: flex;
+    width: 88%;
+    position: relative;
+    top: -80px;
+    justify-content: space-evenly;
+}
+
+.images2{
+    height: 100px;  
+    width: 100px;
+}
+
+#firstIMAGE{
+    transform: translateY(35px);
+    height: 100px;  
+    width: 100px;
+}
+#secIMAGE{
+    height: 100px;  
+    width: 100px;
+}
+#thirdIMAGE{
+    transform: translateY(35px);
+    height: 100px;  
+    width: 100px;
+}
+
+#QUALITY{
+    font-family: Oswald;
+    font-size: 40px; 
+    font-weight: 600;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#QUALITY_CONT{
+    width: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#QUALITY_PARAGRAPH{
+    width: 20vw;
+}
+
+#QUALITY_PARA{
+    font-size: 12px;
+    font-family: Oswald;
+    font-weight: 600;
+    color: #e4d7d7e3;
+    text-align: center;
+}
+
+#TRENDY{
+    font-family: Oswald;
+    font-size: 40px; 
+    font-weight: 600;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#TRENDY_CONT{
+    width: 40vh;
+    position: relative;
+    top: 14em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#TRENDY_PARAGRAPH{
+    width: 20vh;
+    transform: translateY(-3em);
+}
+
+#TRENDY_PARA{
+    font-size: 12px;
+    font-family: Oswald;
+    font-weight: 600;
+    color: #e4d7d7e3;
+    text-align: center;
+}
+
+#Checked{
+    font-family: Oswald;
+    font-size: 40px; 
+    font-weight: 600;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#Checked_CONT{
+    width: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#Checked_PARAGRAPH{
+    width: 30vh;
+    transform: translateY(-3em);
+}
+
+#Checked_PARA{
+    font-size: 12px;
+    font-family: Oswald;
+    font-weight: 600;
+    color: #e4d7d7e3;
+    text-align: center;
+}
+
+#EXPLORE-BUTTON{
+    display: none;
+}
+/* ANIMATIONS, HOVERS, ETC. */
+
+@keyframes PRODUCTSPIN {
+    from{translate: 0;}
+    to{translate: -100%;}
+}
+
+#NAV_CONTACTS a:hover{
+    color: rgba(255, 167, 196, 0.829);
+    transition: 1s ease;
+}
+#NAV_SHOP a:hover{
+    color: rgba(255, 167, 196, 0.829);
+    transition: 1s ease;
+}
+#NAV_ABOUT a:hover{
+    color: rgba(255, 167, 196, 0.829);
+    transition: 1s ease;
+}
+
+/* MOBILE SCREEN */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    #FIRST_PAGE_SUB_SECTION{
+        height: 212vh;
+        width: 101%;
+        top: 225px;
+        transition: 0.5s ease-in-out;
+    }
+
+    #EXPLORE-BUTTON {
+        display: flex;
+        width: 100%;
+        top: 22.25em;
+        justify-content: center;
+        position: absolute;
+    }
+
+    #SUB_PAGE_RADIUS{
+        height: 74em;
+    }
+
+    #NAVBAR a{
+        font-size: 9px;
+    }
+
+    #NAVBAR ul li{
+        padding: 14px;
+    }
+
+    #NAVBAR{
+        right: 0px;
+        top: -7px;
+        
+    }
+
+    #MAIN_HEADER{
+        width: 101%;
+    }
+
+    #NAVBAR_TITLE{
+        top: 6px;
+        left: 21px;
+        font-size: 15px;
+    }
+
+    #PAGE_TITLE {
+        top: -77px;
+        font-size: 5em;
+    }
+
+    #PAGE_PARAGRAPH_SUB_PARAGRAPH {
+        font-size: 0.55em;
+    }
+
+    #PAGE_PARAGRAPH_CONT{
+        top: -136px;
+    }
+
+    .images2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #IMAGE_CONT{
+        top: 23.9375em;
+    }
+
+    #SUB_PAGE_CHILD_RADIUS {
+        top: 3em;
+    }
+
+    #SUB_PAGE_H1 {
+        font-size: 2.3em;
+    }
+
+    #SUB_PAGE_IMAGE{
+        flex-direction: column;
+        align-items: center;
+        top: -260px;
+        gap: 2em;
+    }
+
+    #QUALITY_CONT{
+        top: -39px;
+    }
+
+    #QUALITY_PARAGRAPH{
+        position: relative;
+        top: -49px
+    }
+
+    #QUALITY_PARA{
+        font-size: 10px;
+    }
+
+    #firstIMAGE{
+        transform: translateY(5px);
+    }
+
+    #secIMAGE{
+        transform: translateY(17.5em);
+    }
+
+    #TRENDY_PARA{
+        font-size: 10px;
+    }
+
+    #thirdIMAGE{
+        transform: translateY(30em);
+    }
+
+    #Checked_CONT{
+        transform: translateY(27em);
+    }
+
+    #Checked_PARA{
+        font-size: 10px;
+    }
+
+    #EXPLORE-ANCHOR{
+        margin: 1.5em;
+        text-decoration: none;
+        color: #000000;
+        font-family: 'Bebas Neue';
+    }
+
+    #BUTTON{
+        border-radius: 25px;
+        font-size: .75em;
+        padding: .40em;
+        border: 1px solid black;
+        background-color: rgb(238, 226, 156);
+        cursor: pointer;
+    }
+
+    #BUTTON:hover{
+        background-color: rgb(158, 151, 110);
+        transition: 0.5s ease-in;
+    }
+}
+
+/* TABLET */
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    body{
+        height: 120vh;
+    }
+
+    #SUB_PAGE_IMAGE{
+        justify-content: space-around;
+        transform: translateX(-1.375em);
+    }
+
+    #QUALITY{
+        transform: translateX(-.6em);
+    }
+
+    #QUALITY_PARAGRAPH{
+        transform: translate(-1.375em, -2.5em);
+    }
+
+    #TRENDY_CONT{
+        top: -3em;
+    }
+
+    #TRENDY{
+        transform: translateX(-1.7em);
+    }
+
+    #TRENDY_PARAGRAPH{
+        transform: translate(-4.4em, -3em);
+    }
+
+    #thirdIMAGE{
+        transform: translate(1.25em, 2.1875em);
+    }
+
+    #secIMAGE{
+        transform: translateX(1em);
+    }
+
+    #NAVBAR{
+        right: 1.5625em;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    #FIRST_PAGE_SUB_SECTION{
+        top: 233px;
+        height: 125vh;
+    }
+    #QUALITY_CONT{
+        transform: translate(-1.4em, -1em);
+    }
+
+    #QUALITY_PARAGRAPH{
+        transform: translate(0em, -3em);
+    }
+
+    #TRENDY_CONT{
+        transform: translate(-4.98em, -17em);
+    }
+
+    #TRENDY_PARAGRAPH{
+        transform: translate(0em, -3em);
+        width: 35vh;
+    }
+
+    #TRENDY_PARA{
+        font-size: 0.8125em;
+    }
+
+    #Checked_CONT{
+        transform: translate(-1em, -1em);
+    }
+}
+
+@media (min-width: 1201px){
+    #FIRST_PAGE_SUB_SECTION{
+        height: 137vh;
+        top: 229px;
+    }
+    #QUALITY_CONT{
+        transform: translate(-1.4em, -1em);
+    }
+
+    #QUALITY_PARAGRAPH{
+        transform: translate(0em, -3em);
+    }
+
+    #TRENDY_CONT{
+        transform: translate(-4.98em, -17em);
+    }
+
+    #TRENDY_PARAGRAPH{
+        transform: translate(0em, -3em);
+        width: 35vh;
+    }
+
+    #TRENDY_PARA{
+        font-size: 0.8125em;
+    }
+
+    #Checked_CONT{
+        transform: translate(-1em, -1em);
+    }
+}
